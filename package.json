@@ -1,0 +1,17 @@
+{
+  "name": "sixfiguresoftwareengineer",
+  "version": "1.0.0",
+  "description": "Website for sixfiguresoftwareengineer.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rolando Murillo III",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "bulma": "^0.9.3",
+    "bulma-start": "^0.0.4",
+    "express": "^4.17.1"
+  }
+}
