@@ -9,8 +9,24 @@ app.get('/', (req, res) => {
   res.render('index', {foo: 'FOO'});
 });
 
-app.get('/beginner_topics/part_1', (req, res) => {
-  res.render('beginner_topics/part_1');
+app.get('/beginner_topics/*', (req, res) => {
+  const l = req.path.length;
+  res.render(req.path.substring(1, l + 1));
+})
+
+app.get('/advanced_topics/*', (req, res) => {
+  const l = req.path.length;
+  res.render(req.path.substring(1, l + 1));
+})
+
+app.get('/intern_prep/*', (req, res) => {
+  const l = req.path.length;
+  res.render(req.path.substring(1, l + 1));
+})
+
+app.get('/full_time_prep/*', (req, res) => {
+  const l = req.path.length;
+  res.render(req.path.substring(1, l + 1));
 })
 
 app.get('/assets/css/mediumish.css', (req, res) => {
