@@ -4,66 +4,103 @@
             <h1>Part One</h1>
             <p>This section contains the topics I believe are right to begin with as an introduction to Computer Science on your path to a software engineer.</p>
             
-            <% const topics = ["Introduction", "Computers, Computer Programs, and Java", "Introductory computer programming", "Primitive types", "Math functions",  "Strings & Characters"]; %>
-            <% for (var i =0; i < topics.length;  i++ ) { %>
-                <% const t = topics[i]%>
-                <h2> <%= t %> </h2>
-                <% if (t == "Introduction") { %>
-                    <p>Hello, welcome to your the beginning of your journey to becoming a software engineer! This website serves as...My name is Rolando and I've been in your shoes before.
-                        My origins in Computer Science & Software Engineering didn't start by having parents introduce me to the field, or a group of friends that built cool side projects,
-                        or even a school that had STEM related curriculums. My parents are both immigrants from Honduras with at most a Honduran Highschool education. My friends have no programming
-                        experience. I've also attended a pretty normal public Highschool in Florida that had the typical I.B classes (which I never took) and put a pretty big emphasis on our football team :).
-                        My journey in this field began by simply having the desire to make an iPhone app and publish it in the App Store, that's it! That thought was actually sparked by this
-                        Youtube video: . From that point on, little did I know I would be embarking on a great journey that would open many door in my life and also try my mental fortitude to see
-                        everything though. At times, it was very hard. The good thing is, and it's often a misconception about computer programming, but you DON'T have to be a genius.
-                    </p>
-                    <p>A quote from Steve Jobs:</p>
-                    <blockquote>
-                        “When you grow up you tend to get told that the world is the way it is and your life is just to live your life inside the world. 
-                        Try not to bash into the walls too much. Try to have a nice family life, have fun, save a little money. 
-                        That's a very limited life. Life can be much broader once you discover one simple fact: Everything around you that you call life was made up by people that were no smarter than you. 
-                        And you can change it, you can influence it… Once you learn that, you'll never be the same again.”
-                    </blockquote>
-                <% } else if (t == "Introductory computer programming") { %>
-                    <ul>
-                        <li>Hello world!</li>
-                    </ul>
-                <% } else if (t == "Primitive types") { %>
-                    <h3>What are Primitive Types and why are they important?</h3>
-                    <p></p>
-                    <ul>
-                        <li>int</li>
-                        <li>char</li>
-                        <li>long</li>
-                        <li>boolean</li>
-                        <li>short</li>
-                        <li>double</li>
-                        <li>float</li>
-                        <li>byte</li>
-                    </ul>
-                <% } else if (t == "Math functions") { %>
-                    <h3>Math funcitons in programming why are they important?</h3>
-                    <p></p>
-                    <ul>
-                        <li>ceil</li>
-                        <li>floor</li>
-                        <li>sqrt</li>
-                        <li>pow</li>
-                        <li>Add, Subtract, Divide, Multiply</li>
-                    </ul>
-                <% } else if (t == "Strings & Characters") { %>
-                    <h3>String and Chars and their use cases</h3>
-                    <p></p>
-                    <ul>
-                        <li>String format/interpolation over '+'</li>
-                        <li>Substring</li>
-                        <li>Lowercase/Uppercase</li>
-                    </ul>
-                <% } else {} %>
-                <% %>
-                <% %>
-            <% } %>
-            
+            <% const topics = ["Computers, Computer Programs, and Java", "Introductory computer programming", "Primitive types", "Math functions",  "Strings & Characters"]; %>
+            <h2>Computers, Computer Programs, and Java</h2>
+            <ul>
+                <li>Computers in the perspective of a software engineer</li>
+                <ul>
+                    <li>CPUs</li>
+                    <li>Memory</li>
+                    <li>Disk space</li>
+                </ul>
+                <li>Computer Programs</li>
+                <ul>
+                    <li>foo</li>
+                </ul>
+                <li>Java</li>
+                <ul>
+                    <li>Why Java?</li>
+                </ul>
+            </ul>
+            <h2>Introductory computer programming</h2>
+                <ul>
+                    <li>Hello world!</li>
+                </ul>
+            <h2>Primitive types</h3>
+                <h3>What are Primitive Types and why are they important?</h3>
+                <p></p>
+                <ul>
+                    <li>int</li>
+                    <li>char</li>
+                    <li>long</li>
+                    <li>boolean</li>
+                    <li>short</li>
+                    <li>double</li>
+                    <li>float</li>
+                    <li>byte</li>
+                </ul>
+            <h2>Math functions</h2>
+                <h3>Math funcitons in programming why are they important?</h3>
+                <p></p>
+                <ul>
+                    <li>ceil</li>
+                    <li>floor</li>
+                    <li>sqrt</li>
+                    <li>pow</li>
+                    <li>Add, Subtract, Divide, Multiply</li>
+                </ul>
+            <h2>Strings & Characters</h2>
+                <h3>String and Chars and their use cases</h3>
+                <p></p>
+                <ul>
+                    <li>String format/interpolation over '+'</li>
+                    <li>Substring</li>
+                    <li>Lowercase/Uppercase</li>
+                </ul>
+            <h2>Control Flow</h2>
+                <ul>
+                    <li>What is Control Flow?</li>
+                    <li>if-else</li>
+                    <li>switch</li>
+                </ul>
+            <h2>Classes</h2>
+                <ul>
+                    <li>Defining a custom class</li>
+                </ul>
+            <h2>Methods & Scope</h2>
+                <ul>
+                    <li>What is scope?</li>
+                    <li>Method signatures</li>
+                </ul>
+            <h2>Intro Data Structures</h2>
+                <ul>
+                    <li>Arrays</li>
+                    <li>Linked Lists</li>
+                    <li>Stacks</li>
+                    <li>Queues</li>
+                    <li>Maps</li>
+                    <li></li>
+                </ul>
+            <h2>Debugging Errors</h2>
+                <ul>
+                    <li>The different types of errors (Compile time vs Build time vs Runtime)</li>
+                    <li>How to read the compiler</li>
+                </ul>
+            <h2>Developer Resources</h2>
+                <ul>
+                    <li>Stack Overflow</li>
+                    <li>Github</li>
+                </ul>
+            <h2>Beginner Challenges</h2>
+            <ul>
+                <li>Calculator</li>
+                <li>Calander application</li>
+            </ul>
+            <h2>Resumé Project</h2>
+            <ul>
+                <li>iOS Application</li>
+            </ul>
+
 
 
 
