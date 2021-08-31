@@ -29,6 +29,11 @@ app.get('/full_time_prep/*', (req, res) => {
   res.render(req.path.substring(1, l + 1));
 })
 
+app.get('/nav_links/*', (req, res) => {
+  const l = req.path.length;
+  res.render(req.path.substring(1, l + 1));
+})
+
 app.get('/assets/css/mediumish.css', (req, res) => {
   res.sendFile(path.join(__dirname, '/assets/css/mediumish.css'))
 })
